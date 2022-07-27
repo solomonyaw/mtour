@@ -16,7 +16,7 @@ Colors
     font-size: 16px;
     line-height: 1.7;
     color:#779;
-    padding: 30px;
+    padding: 15px;
   }
      /* ---------------------
           Header section
@@ -35,7 +35,7 @@ Colors
   }
   .logo-box
   {
-    position: relative;
+    position: absolute;
    top:40px;
    left: 40px;
   }
