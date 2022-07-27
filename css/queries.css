@@ -2,7 +2,7 @@
 @media only screen and (max-width:480px)
 {
 
-.primary-heading-main
+.primary-heading--main
  {
   font-size: 20px;
   font-weight: 100;
@@ -13,7 +13,7 @@
     width:100px;
     height: 80px;
  }
- .logo-box
+ .header__logo-box
   {
    top:0px;
    left: 10px;
@@ -29,19 +29,19 @@
 /* small phones to small tablets from 481px to 767px */
 @media only screen and (max-width:767px)
 {
-    .primary-heading-main
+    .primary-heading--main
     {
      font-size: 35px;
      font-weight: 100;
      letter-spacing: 10px;
     }  
 
-    .logo{
+    .header__logo{
         width:130px;
         height: 80px;
      }
 
-     .logo-box
+     .header__logo-box
   {
    top:0px;
    left: 10px;
@@ -59,14 +59,14 @@
 /* large phone screen from 768px to 1023px */
 @media only screen and (max-width:1023px)
 {
-    .primary-heading-main
+    .primary-heading--main
     {
      font-size: 40px;
      font-weight: 100;
      letter-spacing: 10px;
     } 
     
-    .logo{
+    .header__logo{
         width:130px;
         height: 80px;
      }
@@ -81,19 +81,19 @@
 /* larger phone screen from 1023px to 1200px */
 @media only screen and (max-width:1200px)
 {
-    .primary-heading-main
+    .primary-heading--main
     {
      font-size: 40px;
      font-weight: 100;
      letter-spacing: 10px;
     } 
     
-    .logo{
+    .header__logo{
         width:130px;
         height: 80px;
      }
 
-     .logo-box
+     .header__logo-box
   {
    top:0px;
    left: 10px;
