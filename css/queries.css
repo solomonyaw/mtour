@@ -18,6 +18,11 @@
    top:0px;
    left: 10px;
   }
+  .primary-heading-sub
+  {
+    font-weight: 300;
+  letter-spacing: 2px;
+  }
 
 }
 
@@ -41,6 +46,14 @@
    top:0px;
    left: 10px;
   }
+  .primary-heading-sub
+  {
+    font-size: 18px;
+    font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 25px;
+  }
+
 }
 
 /* large phone screen from 768px to 1023px */
