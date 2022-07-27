@@ -4,19 +4,24 @@ Colors
 #e67e22
  */
  
- *{
+ *,
+ *::after,
+ *::before{
    margin: 0;
    padding: 0;
-   box-sizing: border-box;
+   box-sizing: inherit;
   }
-
+  html{
+    font-size: 62.5%;
+  }
   body{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 1.7;
     color:#779;
-    padding: 15px;
+    padding: 1.5rem;
+    box-sizing: border-box;
   }
   
      /* ---------------------
@@ -26,11 +31,11 @@ Colors
   @keyframes moveInLeft {
     0%{
      opacity: 0;
-     transform:translateX(-100px);
+     transform:translateX(-10rem);
     }
 
     80%{
-transform: translateX(20px);
+transform: translateX(2.rem);
     }
 
     100%{
@@ -43,11 +48,11 @@ transform: translateX(20px);
   @keyframes moveInRight {
     0%{
      opacity: 0;
-     transform:translateX(100px);
+     transform:translateX(10rem);
     }
 
     80%{
-transform: translateX(- 20px);
+transform: translateX(-2rem);
     }
 
     100%{
@@ -60,7 +65,7 @@ transform: translateX(- 20px);
   @keyframes moveInBottom {
     0%{
      opacity: 0;
-     transform:translateY(30px);
+     transform:translateY(3rem);
     }
 
 
@@ -77,28 +82,29 @@ transform: translateX(- 20px);
   .btn:link,.btn:visited{
     text-transform: uppercase;
     text-decoration: none;
-    border-radius: 300px;
-    padding: 10px 30px;
+    border-radius: 30rem;
+    padding: 1rem 3rem;
     position: relative;
+    font-size: 1.6rem;
   }
 
-  .btn-white{
+  .btn--white{
    background-color: #fff;
    color:rgb(252, 153, 5);
    text-align: center;
    display: inline-block;
   }
 
-  .btn-white:hover{
-    transform: translateY(-5px);
+  .btn--white:hover{
+    transform: translateY(-0.5rem);
     transition: transform 0.5s;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.747);
+    box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.747);
   }
 
   .btn:active{
-    transform: translateY(-3px);
+    transform: translateY(-0.3rem);
     transition: transform 0.4s;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.747);
+    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.747);
   }
 
   .btn::after{
@@ -106,7 +112,7 @@ transform: translateX(- 20px);
     display: inline-block;
     width: 100%;
     height: 100%;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: absolute;
     top:0;
     left: 0;
@@ -114,7 +120,7 @@ transform: translateX(- 20px);
     transition: all 0.4s;
   }
 
-  .btn-white::after{
+  .btn--white::after{
     background-color: #fff;
   }
 
@@ -123,7 +129,7 @@ transform: translateX(- 20px);
     opacity: 0;
   }
 
-  .btn-animated
+  .btn--animated
   {
     animation:moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;
@@ -142,23 +148,23 @@ transform: translateX(- 20px);
     height: 95vh;
     background-attachment: scroll;
     clip-path: polygon(0 0,100% 0,100% 100%,0 80vh);
-    border-radius: 20px;
+    border-radius: 2rem;
     border:1px solid rgba(0, 0, 0, 0.137);
      position: relative;
   }
-  .logo-box
+  .header__logo-box
   {
     position: absolute;
-   top:40px;
-   left: 40px;
+   top:4rem;
+   left:4rem;
   }
-   .logo
+   .header__logo
    {
-    width:300px;
-     height: 150px;
+    width:30rem;
+     height: 15rem;
    }
   
- .centered-text-box
+ .header__centered-text-box
  {
   position:absolute;
   top:45%;
@@ -171,30 +177,30 @@ transform: translateX(- 20px);
   color:#fff;
   text-transform: uppercase;
 }
-  .primary-heading-main
+  .primary-heading--main
   {
   display: block;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 500;
-  letter-spacing: 30px;
+  letter-spacing: 3rem;
   animation-name: moveInRight;
   animation-duration: 3s;
   animation-iteration-count: 3;
 
   }
 
-  .primary-heading-sub
+  .primary-heading--sub
   {
     text-align: center;
    display: block;
    width: 100%;
-   font-size: 18px;
+   font-size: 1.8rem;
    text-transform: lowercase;
    font-weight: 700;
-  letter-spacing: 6px;
+  letter-spacing: 0.6rem;
   animation-name: moveInLeft;
   animation-duration: 3s;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
   }
 
   
