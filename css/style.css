@@ -1,0 +1,78 @@
+
+/* 
+Colors
+#e67e22
+ */
+ 
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+  }
+
+  body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color:#779;
+    padding: 30px;
+  }
+     /* ---------------------
+          Header section
+     ---------------------*/
+  .header{ 
+    background-image: linear-gradient(to right top,#fa7602b6,#dd7213ce),
+     url("img/capecoast.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 95vh;
+    background-attachment: scroll;
+    clip-path: polygon(0 0,100% 0,100% 100%,0 80vh);
+    border-radius: 20px;
+    border:1px solid rgba(0, 0, 0, 0.137);
+     position: relative;
+  }
+  .logo-box
+  {
+    position: relative;
+   top:40px;
+   left: 40px;
+  }
+   .logo
+   {
+    width:300px;
+     height: 150px;
+   }
+
+  
+ .centered-text-box
+ {
+  position:absolute;
+  top:45%;
+  left:50%;
+  transform: translate(-50%,-50%);
+ }
+
+ .primary-heading{
+  color:#fff;
+  text-transform: uppercase;
+}
+  .primary-heading-main
+  {
+  display: block;
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: 30px;
+  }
+
+  .primary-heading-sub
+  {
+    text-align: left;
+   display: block;
+   width: 100%;
+   font-size: 18px;
+   text-transform: lowercase;
+   font-weight: 700;
+  letter-spacing: 6px;
+  }

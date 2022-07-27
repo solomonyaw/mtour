@@ -1,0 +1,20 @@
+css code = *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+1.Normalize.css
+2.google fonts
+3. Responsivegridsystem.com 
+
+color: 
+1.flatuicolors	
+2.0to255.com 	
+
+icons:
+ionicons
+
+polygons"
+bennettfeely.com/clippy
+

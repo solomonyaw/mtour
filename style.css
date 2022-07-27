@@ -1,7 +1,27 @@
-body{
-    background-color:  rgb(158, 96, 96);
-    color: #fff
-}
-h1{
-    text-align: center;
-}
+
+/* 
+Colors
+#e67e22
+ */
+ 
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+  }
+
+  body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color:#779
+  }
+
+  .header{
+   
+    height: 95vh;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
