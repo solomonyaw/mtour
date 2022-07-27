@@ -178,7 +178,7 @@ transform: translateX(- 20px);
     background-color: #fff;
   }
   .btn:hover::after{
-    transform: scaleX(1.4) scaleY(1.7);
+    transform:  scaleX(1.4) scaleY(1.7);
     opacity: 0;
   }
 
