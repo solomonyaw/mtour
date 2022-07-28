@@ -22,6 +22,7 @@
             transform: translateY(-0.5rem);
             transition: transform 0.5s;
             box-shadow: 0rem 1rem 2rem rgba($color-black, 0.747);
+           
     
             &::after{
                 transform:  scaleX(1.7) scaleY(2);
@@ -49,15 +50,17 @@
             left: 0;
             z-index: -1;
             transition: all 0.4s;
+            border: none;
           }
         
           &--white::after{
             background-color:$color-white;
+            border: none;
           }
         
           &--animated
           {
-            animation:moveInBottom .5s ease-out .75s;
+            animation:moveInBottom 0.5s ease-out 0.75s;
             animation-fill-mode: backwards;
             transition: all 1s;
           }
