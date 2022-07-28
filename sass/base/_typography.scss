@@ -34,6 +34,38 @@
   
   }
 
+  .secondary-heading{
+    font-size:3.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: inline-block;
+    background-image: linear-gradient($color--dark-brown,$color--dark-brown);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 3px;
+    transition: all 0.3s;
+
+     &:hover{
+      transform: skewY(3deg) skewX(5deg) scale(1.2);
+      text-shadow:2.5rem 1rem 2rem rgba($color-black, 0.8);
+      
+     }
+  }
+
+  .tertiary-heading{
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  }
+
+  .paragraph{
+   font-size: 1.6rem;
+    &:not(:last-child)
+    {
+      margin-bottom: 2rem;
+    }
+  }
+
   // body typography
   body{
     font-family: 'Poppins', sans-serif;
