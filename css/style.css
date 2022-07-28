@@ -98,7 +98,7 @@ html {
 }
 
 .paragraph {
-  font-size: 1.6rem;
+  font-size: 1.35rem;
 }
 .paragraph:not(:last-child) {
   margin-bottom: 2rem;
@@ -109,7 +109,7 @@ body {
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  color: rgb(113, 113, 230);
+  color: rgb(49, 42, 42);
   padding: 1.5rem;
   box-sizing: border-box;
 }
@@ -118,8 +118,20 @@ body {
   text-align: center;
 }
 
-.u-margin-bottom-8 {
+.u-margin-bottom-big {
   margin-bottom: 8rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem;
+}
+
+.u-margin-bottom-ver-small {
+  margin-bottom: 1.5rem;
 }
 
 /* ---------------------
@@ -176,6 +188,45 @@ body {
   transition: all 1s;
 }
 
+.btn-text:link, .btn-text:visited {
+  color: #d35400;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #d35400;
+  font-size: calc(1.6rem/1.2);
+  transition: all 0.5s;
+}
+.btn-text:hover {
+  background-color: #d35400;
+  color: #fff;
+  padding: 0.8rem;
+  box-shadow: 0rem 1rem 2rem black;
+  transform: translateY(-2px);
+  border-radius: 5em;
+  transform: skewY(2deg, 8deg);
+}
+.btn-text:active {
+  box-shadow: 0rem 0.5rem 1rem black;
+  transform: translateY(0rem);
+}
+
+.composition {
+  position: relative;
+}
+.composition__photo {
+  width: 70%;
+  box-shadow: 0 2rem 8rem black;
+  border-radius: 3px;
+  position: absolute;
+}
+.composition__photo--p1 {
+  left: 0em;
+  bottom: -92rem;
+}
+.composition__photo--p2 {
+  right: 0em;
+  top: 2rem;
+}
 /* ---------------------
         Header section
    ---------------------*/

@@ -18,5 +18,7 @@ ionicons
 polygons"
 
 html vscode extention: emmet
+
+RESOURCES: www.codingheroes.io/resources
 	
 
