@@ -15,6 +15,7 @@
     [class^="col-"]
     {
         background-color:$color-dark-red;   
+        padding:100px;
         float: left;
          
         &:not(:last-child)

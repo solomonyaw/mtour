@@ -186,6 +186,7 @@ body {
 }
 .row [class^=col-] {
   background-color: #c0392b;
+  padding: 100px;
   float: left;
 }
 .row [class^=col-]:not(:last-child) {
