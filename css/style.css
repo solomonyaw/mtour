@@ -214,19 +214,35 @@ body {
   position: relative;
 }
 .composition__photo {
-  width: 70%;
+  width: 55%;
   box-shadow: 0 2rem 8rem black;
-  border-radius: 3px;
   position: absolute;
+  transition: all 0.6s;
+  z-index: 10;
+  outline-offset: 1rem;
 }
 .composition__photo--p1 {
-  left: 0em;
-  bottom: -92rem;
+  left: 0;
+  top: -2rem;
 }
 .composition__photo--p2 {
-  right: 0em;
+  right: 0;
   top: 2rem;
 }
+.composition__photo--p3 {
+  left: 20%;
+  top: 10rem;
+}
+.composition__photo:hover {
+  transform: scale(1.5);
+  box-shadow: 0 3rem 10rem black;
+  z-index: 20;
+  outline: 6px solid #d35400;
+}
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.95rem);
+}
+
 /* ---------------------
         Header section
    ---------------------*/
