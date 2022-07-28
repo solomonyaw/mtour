@@ -1,0 +1,38 @@
+  /* ---------------------
+          Header section
+     ---------------------*/
+     .header{ 
+        background-image: linear-gradient(to right top,$color-brown,$color-brown),
+         url("img/capecoast.jpg");
+        background-size: cover;
+        background-position: top;
+        height: 95vh;
+        background-attachment: scroll;
+        clip-path: polygon(0 0,100% 0,100% 100%,0 80vh);
+        border-radius: 2rem;
+        border:1px solid rgba(0, 0, 0, 0.137);
+         position: relative;
+    
+         &__logo-box
+         {
+           position: absolute;
+          top:4rem;
+          left:4rem;
+         }
+          &__logo
+          {
+           width:30rem;
+            height: 15rem;
+          }
+         
+        &__centered-text-box
+        {
+         position:absolute;
+         top:45%;
+         left:50%;
+         transform: translate(-50%,-50%);
+         text-align: center;
+        }
+       
+      }
+     

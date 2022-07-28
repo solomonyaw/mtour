@@ -16,5 +16,5 @@ icons:
 ionicons
 
 polygons"
-bennettfeely.com/clippy
+	
 

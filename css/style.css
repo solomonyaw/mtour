@@ -1,184 +1,59 @@
-
-/* 
-Colors
-#e67e22
- */
- 
- *,
- *::after,
- *::before{
-   margin: 0;
-   padding: 0;
-   box-sizing: inherit;
-  }
-  html{
-    font-size: 62.5%;
-  }
-  body{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    /* font-size: 16px; */
-    line-height: 1.7;
-    color:#779;
-    padding: 1.5rem;
-    box-sizing: border-box;
-  }
-  
-     /* ---------------------
-          animations 
-     ---------------------*/
-  
-  @keyframes moveInLeft {
-    0%{
-     opacity: 0;
-     transform:translateX(-10rem);
-    }
-
-    80%{
-transform: translateX(2.rem);
-    }
-
-    100%{
-    opacity: 1;
-    transform: translate(0);
-    }
-
-  }
-
-  @keyframes moveInRight {
-    0%{
-     opacity: 0;
-     transform:translateX(10rem);
-    }
-
-    80%{
-transform: translateX(-2rem);
-    }
-
-    100%{
-    opacity: 1;
-    transform: translate(0);
-    }
-
-  }
-
-  @keyframes moveInBottom {
-    0%{
-     opacity: 0;
-     transform:translateY(3rem);
-    }
-
-
-    100%{
-    opacity: 1;
-    transform: translate(0);
-    }
-
-  }
-   /* ---------------------
-          Buttons
-     ---------------------*/
-     
-  .btn:link,.btn:visited{
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 30rem;
-    padding: 1rem 3rem;
-    position: relative;
-    font-size: 1.6rem;
-  }
-
-  .btn--white{
-   background-color: #fff;
-   color:rgb(252, 153, 5);
-   text-align: center;
-   display: inline-block;
-  }
-
-  .btn--white:hover{
-    transform: translateY(-0.5rem);
-    transition: transform 0.5s;
-    box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.747);
-  }
-
-  .btn:active{
-    transform: translateY(-0.3rem);
-    transition: transform 0.4s;
-    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.747);
-  }
-
-  .btn::after{
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top:0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.4s;
-  }
-
-  .btn--white::after{
-    background-color: #fff;
-  }
-
-  .btn:hover::after{
-    transform:  scaleX(1.7) scaleY(2);
+/* ---------------------
+        animations 
+   ---------------------*/
+@keyframes moveInLeft {
+  0% {
     opacity: 0;
+    transform: translateX(-10rem);
   }
+  80% {
+    transform: translateX(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
 
-  .btn--animated
-  {
-    animation:moveInBottom .5s ease-out .75s;
-    animation-fill-mode: backwards;
-    transition: all 1s;
-  }
-  
+html {
+  font-size: 62.5%;
+}
 
-     /* ---------------------
-          Header section
-     ---------------------*/
-  .header{ 
-    background-image: linear-gradient(to right top,#fa7602b6,#dd7213ce),
-     url("img/capecoast.jpg");
-    background-size: cover;
-    background-position: top;
-    height: 95vh;
-    background-attachment: scroll;
-    clip-path: polygon(0 0,100% 0,100% 100%,0 80vh);
-    border-radius: 2rem;
-    border:1px solid rgba(0, 0, 0, 0.137);
-     position: relative;
-  }
-  .header__logo-box
-  {
-    position: absolute;
-   top:4rem;
-   left:4rem;
-  }
-   .header__logo
-   {
-    width:30rem;
-     height: 15rem;
-   }
-  
- .header__centered-text-box
- {
-  position:absolute;
-  top:45%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
- }
-
- .primary-heading{
-  color:#fff;
+.primary-heading {
+  color: #fff;
   text-transform: uppercase;
 }
-  .primary-heading--main
-  {
+.primary-heading--main {
   display: block;
   font-size: 6rem;
   font-weight: 500;
@@ -186,21 +61,111 @@ transform: translateX(-2rem);
   animation-name: moveInRight;
   animation-duration: 3s;
   animation-iteration-count: 3;
-
-  }
-
-  .primary-heading--sub
-  {
-    text-align: center;
-   display: block;
-   width: 100%;
-   font-size: 1.8rem;
-   text-transform: lowercase;
-   font-weight: 700;
+}
+.primary-heading--sub {
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-size: 1.8rem;
+  text-transform: lowercase;
+  font-weight: 700;
   letter-spacing: 0.6rem;
   animation-name: moveInLeft;
   animation-duration: 3s;
   margin-bottom: 3rem;
-  }
+}
 
-  
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: rgb(113, 113, 230);
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+/* ---------------------
+          Buttons
+     ---------------------*/
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 30rem;
+  padding: 1rem 3rem;
+  position: relative;
+  font-size: 1.6rem;
+}
+.btn--white {
+  background-color: #fff;
+  color: rgb(252, 153, 5);
+  text-align: center;
+  display: inline-block;
+}
+.btn--white:hover {
+  transform: translateY(-0.5rem);
+  transition: transform 0.5s;
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.747);
+}
+.btn--white:hover::after {
+  transform: scaleX(1.7) scaleY(2);
+  opacity: 0;
+}
+.btn:active {
+  transform: translateY(-0.3rem);
+  transition: transform 0.4s;
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.747);
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.btn--white::after {
+  background-color: #fff;
+}
+.btn--animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+  transition: all 1s;
+}
+
+/* ---------------------
+        Header section
+   ---------------------*/
+.header {
+  background-image: linear-gradient(to right top, rgba(250, 118, 2, 0.7137254902), rgba(250, 118, 2, 0.7137254902)), url("img/capecoast.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 95vh;
+  background-attachment: scroll;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
+  border-radius: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  position: relative;
+}
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+.header__logo {
+  width: 30rem;
+  height: 15rem;
+}
+.header__centered-text-box {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

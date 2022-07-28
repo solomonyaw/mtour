@@ -1,0 +1,22 @@
+{
+  "name": "seeghanatours",
+  "version": "1.0.0",
+  "description": "landing page for seeghanatours",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solomonyaw/seeghanatours.git"
+  },
+  "author": "solomonyaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solomonyaw/seeghanatours/issues"
+  },
+  "homepage": "https://github.com/solomonyaw/seeghanatours#readme",
+  "devDependencies": {
+    "sass": "^1.54.0"
+  }
+}
