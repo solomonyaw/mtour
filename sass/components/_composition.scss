@@ -26,9 +26,10 @@
         }
 
         &:hover{
-            transform: scale(1.5);
+            transform: scale(1.5) translateY(-0.5rem);
             box-shadow: 0 3rem 10rem rgba($color-black, 2);
             z-index:20;
+            border-radius: 300px;
             outline: 6px solid $color--dark-brown;
         }
     }
