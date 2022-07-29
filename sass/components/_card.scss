@@ -1,0 +1,117 @@
+.card
+{  //Functionality
+     perspective: 150rem;
+    -moz-perspective: 150rem;
+    height: 20rem; 
+    position: relative;
+    
+    &__side
+    {
+        background-color: $color-white;
+        height: 50rem;
+        font-size: 2rem;
+        transition: all 0.8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0rem 4rem 5rem rgba($color-grey-dark,1.0);
+        
+        &--front
+        {
+            background-color: $color-white;
+        }
+
+        &--back
+        {
+         transform:rotateY(-180deg);
+
+         &-1{
+            background-image: linear-gradient(to right bottom,$color-brown,$color--dark-brown);
+         }
+        }
+
+    }
+
+    &:hover &__side--front {
+        transform:rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform:rotateY(0);
+    }
+    // card front styling
+    &__picture
+    {
+        background-size: cover;
+        height: 30vh;
+        background-blend-mode:color;
+        clip-path:polygon(0 0,100% 0,100% 90%, 0 100%);
+        -webkit-clip-path:polygon(0 0,100% 0,100% 90%, 0 100%);
+
+      &-1
+      {
+        background-image:linear-gradient(to right bottom,$color-brown,$color--dark-brown),
+         url("../../img/akwaaba.png");
+     
+      }
+
+      &-2
+      {
+        background-image:    linear-gradient(to right bottom,$color-light-green,$color-dark-green),
+         url("../../img/akwaaba2.png");
+      }
+
+      &-3
+      {
+        background-image:   linear-gradient(to right bottom,$color-light-blue,$color-dark-blue),
+          url("../../img/akwaaba.png");
+      }
+    }
+
+    &__heading
+    {
+        font-size: 2.2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        width: 75%;
+        right:2rem;
+        top:9rem;
+    }
+
+    &_heading-span
+    {
+        padding: 1rem 0.5rem;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+        &--1
+        {
+            background-image: linear-gradient(to right bottom,$color-brown,$color--dark-brown);
+        }
+    }
+
+    &__details{
+        padding: 3rem;
+        ul{
+             list-style: none;
+             width: 80%;
+             margin: 0 auto;
+            li{
+                text-align: center;
+                font-size: 1.8rem;
+                padding: 1rem;
+
+             &:not(:last-child)
+             {
+               border-bottom: 2px solid $color-light-grey;
+             }
+            }
+        }
+    }
+}
