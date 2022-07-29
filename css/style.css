@@ -90,6 +90,9 @@ html {
   transform: skewY(3deg) skewX(5deg) scale(1.2);
   text-shadow: 2.5rem 1rem 2rem rgba(0, 0, 0, 0.8);
 }
+.secondary-headingservices--heading {
+  color: #fff;
+}
 
 .tertiary-heading {
   font-size: 1.8rem;
@@ -112,6 +115,11 @@ body {
   color: rgb(49, 42, 42);
   padding: 1.5rem;
   box-sizing: border-box;
+}
+
+.services--heading {
+  color: #fff;
+  margin-top: 0;
 }
 
 .u-center-text {
@@ -244,6 +252,33 @@ body {
   transform: scale(0.95rem);
 }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2em 4em black;
+  transition: all 0.3s;
+}
+.feature-box__icon {
+  font-size: 6rem;
+  margin-bottom: 0rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, #d35400, #d35400);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.feature-box__image {
+  width: 100%;
+  height: 80px;
+  margin-top: 1rem;
+  display: inline-block;
+}
+.feature-box:hover {
+  transform: scale(1.05) translateY(-1.5rem);
+}
+
 /* ---------------------
         Header section
    ---------------------*/
@@ -252,7 +287,7 @@ body {
   background-size: cover;
   background-position: top;
   height: 95vh;
-  background-attachment: scroll;
+  background-attachment: fixed;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
   border-radius: 2rem;
   border: 1px solid rgba(0, 0, 0, 0.137);
@@ -279,6 +314,19 @@ body {
   background-color: rgb(228, 220, 220);
   padding: 20rem 0;
   margin-top: -20vh;
+}
+
+.features_section {
+  padding: 5rem 0;
+  background-image: linear-gradient(to right top, rgba(59, 167, 59, 0.884), rgba(59, 167, 59, 0.884)), url("img/icon-background.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  transform: skewY(-5deg);
+  margin-top: -10rem;
+}
+.features_section > * {
+  transform: skewY(5deg);
 }
 
 .row {

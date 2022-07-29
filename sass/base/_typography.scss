@@ -50,6 +50,10 @@
       text-shadow:2.5rem 1rem 2rem rgba($color-black, 0.8);
       
      }
+     &services--heading
+     {
+      color:$color-white;
+     }
   }
 
   .tertiary-heading{
@@ -76,5 +80,11 @@
     padding: 1.5rem;
     box-sizing: border-box;
   }
+
+    .services--heading
+     {
+      color:$color-white;
+      margin-top: 0;
+     }
     
     

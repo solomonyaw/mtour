@@ -5,3 +5,20 @@
     padding:20rem 0;
     margin-top: -20vh;
 }
+
+.features_section
+{
+         padding:5rem 0;
+       background-image: linear-gradient(to right top,$color-light-green,$color-light-green),
+         url("img/icon-background.png");
+        background-size: cover;
+        background-position:center;
+        background-attachment: scroll;
+        transform: skewY(-5deg);
+        margin-top: -10rem;
+
+     &>*{
+        transform: skewY(5deg);
+     }
+        
+}

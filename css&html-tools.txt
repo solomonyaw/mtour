@@ -14,6 +14,7 @@ color:
 
 icons:
 ionicons
+linea.io
 
 polygons"
 
