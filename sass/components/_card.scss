@@ -4,17 +4,19 @@
     -moz-perspective: 150rem;
     height: 5rem; 
     position: relative;
+    margin-bottom: 2rem;
+    cursor: pointer;
     
     &__side
     {
         background-color: $color-white;
-        height: 50rem;
+        height: 55rem;
         font-size: 2rem;
         transition: all 0.8s ease;
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 109%;
         backface-visibility: hidden;
         border-radius: 5px;
         overflow: hidden;
