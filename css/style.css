@@ -146,6 +146,10 @@ body {
   font-size: 1.6rem;
 }
 
+.margin-left {
+  margin-left: 3rem;
+}
+
 /* ---------------------
           Buttons
      ---------------------*/
@@ -486,6 +490,51 @@ body {
   filter: blur(3px) brightness(80%);
 }
 
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.form__input {
+  font-size: 1.2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  font-family: inherit;
+  margin-left: 5rem;
+  width: 30%;
+  border-bottom: 4px solid transparent;
+  display: block;
+  color: inherit;
+}
+.form__input:focus {
+  outline: none;
+  box-shadow: 0rem 3rem 5rem rgba(0, 0, 0, 0.6);
+  border-bottom: 4px solid #d35400;
+  border-bottom: 4px solid rgba(10, 85, 10, 0.884);
+}
+.form__input:focus:invalid {
+  outline: none;
+  box-shadow: 0rem 3rem 5rem rgba(0, 0, 0, 0.6);
+  border-bottom: 4px solid #d35400;
+}
+.form__input::-webkit-input-placeholder {
+  color: rgb(49, 42, 42);
+}
+.form__label {
+  margin-left: 5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-left: 7rem;
+  display: block;
+  transition: all 0.8s;
+}
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
 /* ---------------------
         Header section
    ---------------------*/
@@ -550,7 +599,19 @@ body {
 
 .section-book {
   padding: 15rem 0;
-  background-image: linear-gradient(to bottom right, #ec5241, #c0392b);
+  background-image: linear-gradient(to bottom right, rgba(59, 167, 59, 0.884), rgba(10, 85, 10, 0.884));
+}
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../../img/akwaaba2.png");
+  background-size: 100%;
+  height: 50rem;
+  border-radius: 3px;
+  box-shadow: 0rem 3rem 5rem rgba(0, 0, 0, 0.6);
+}
+.book__form {
+  width: 100%;
+  padding: 6rem;
 }
 
 .row {
