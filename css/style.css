@@ -500,6 +500,10 @@ body {
   margin-left: 8rem;
   display: block;
 }
+.form__group--button_link {
+  color: white;
+  text-decoration: none;
+}
 .form__input {
   font-size: 1.2rem;
   padding: 1.5rem 2rem;

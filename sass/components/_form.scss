@@ -11,6 +11,11 @@
           margin-top: 8rem;
           margin-left: 8rem;
           display: block;
+          
+          &_link{
+            color:white;
+            text-decoration: none;
+          }
         }
 
     &__input
