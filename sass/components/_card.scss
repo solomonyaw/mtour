@@ -2,7 +2,7 @@
 {  //Functionality
      perspective: 150rem;
     -moz-perspective: 150rem;
-    height: 20rem; 
+    height: 5rem; 
     position: relative;
     
     &__side
@@ -31,6 +31,12 @@
 
          &-1{
             background-image: linear-gradient(to right bottom,$color-brown,$color--dark-brown);
+         }
+         &-2{
+            background-image: linear-gradient(to right bottom,$color-dark-green,$color-light-green);
+         }
+         &-3{
+            background-image: linear-gradient(to right bottom,$color-light-blue,$color-dark-blue);
          }
         }
 
@@ -61,14 +67,14 @@
 
       &-2
       {
-        background-image:    linear-gradient(to right bottom,$color-light-green,$color-dark-green),
+        background-image: linear-gradient(to right bottom,$color-light-green,$color-dark-green),
          url("../../img/akwaaba2.png");
       }
 
       &-3
       {
         background-image:   linear-gradient(to right bottom,$color-light-blue,$color-dark-blue),
-          url("../../img/akwaaba.png");
+          url("../../img/temacenter.png");
       }
     }
 
@@ -113,5 +119,36 @@
              }
             }
         }
+    }
+ 
+    // card back styling
+    &__cta
+    {
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+
+    &__price-box
+    {
+      margin-bottom: 5rem;
+      color:$color-light-grey;
+    }
+
+    &__price-only
+    {
+      font-size: 2rem;
+      text-transform: uppercase;
+      text-align: center;
+      color:$color-light-grey;
+    }
+
+    &__price-value
+    {
+        font-size: 5rem;
+        color:$color-light-grey;
+        font-weight: 100;
+        margin-bottom: 10rem;
     }
 }

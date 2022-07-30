@@ -31,6 +31,28 @@
             
           }
           }
+          &--green{
+            background-color: $color-light-green;
+            color:$color-white;
+            text-align: center;
+            display: inline-block;
+     
+            &:hover{
+             transform: translateY(-0.5rem);
+             transition: transform 0.5s;
+             box-shadow: 0rem 1rem 2rem rgba($color-black, 0.747);
+             background-color: $color-brown;
+             transition: all 0.9s;
+            
+     
+             &::after{
+                 transform:  scaleX(1.7) scaleY(2);
+                 opacity: 0;
+               }
+             
+           }
+           }
+         
         
         
           &:active{
