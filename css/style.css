@@ -361,13 +361,13 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 .card__picture-1 {
-  background-image: linear-gradient(to right bottom, rgba(250, 118, 2, 0.7137254902), #d35400), url("../../img/akwaaba.png");
+  background-image: linear-gradient(to right bottom, rgba(250, 118, 2, 0.7137254902), #d35400), url("/img/akwaaba.png");
 }
 .card__picture-2 {
-  background-image: linear-gradient(to right bottom, rgba(59, 167, 59, 0.884), rgba(10, 85, 10, 0.884)), url("../../img/akwaaba2.png");
+  background-image: linear-gradient(to right bottom, rgba(59, 167, 59, 0.884), rgba(10, 85, 10, 0.884)), url("/img/akwaaba2.png");
 }
 .card__picture-3 {
-  background-image: linear-gradient(to right bottom, rgb(113, 113, 230), rgb(14, 14, 238)), url("../../img/temacenter.png");
+  background-image: linear-gradient(to right bottom, rgb(113, 113, 230), rgb(14, 14, 238)), url("/img/temacenter.png");
 }
 .card__heading {
   font-size: 2.2rem;

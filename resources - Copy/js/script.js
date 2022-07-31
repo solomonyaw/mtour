@@ -55,9 +55,9 @@ $(document).ready(function(){
        });
 
        //mobile nav drop-down
-       $('.js--nav-icon').click(function(){
-        var nav = $('.js--main-nav');
-        var icon =$('.js--nav-icon i');
+       $('.navigation__icon').click(function(){
+        var nav = $('.navigation__nav');
+        var icon =$('.navigation__icon a');
         nav.slideToggle(200);
 
         if(icon.hasClass('ion-navicon-round'))
