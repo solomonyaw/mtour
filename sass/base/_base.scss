@@ -10,6 +10,20 @@
   //this defines what 1rem means
   html{
     font-size: 62.5%;
+
+      
+      @include respond(desktop){
+        font-size: 56.25%;
+       }
+
+       @include respond(tablet){
+        font-size: 50%;
+       }
+
+
+       @include respond(bigdesktop){
+        font-size: 75%;
+       }
   }
  
   

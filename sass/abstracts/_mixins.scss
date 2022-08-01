@@ -15,3 +15,37 @@
     transform: translate(-50%,-50%);
     
 }
+
+
+//MEDIA QUERY MANAGER
+/*
+0 -600px: phone
+600 - 900: tablet portrait 
+900 -1200 : desktop landscape
+
+1800 +: big screens
+// media query lengths must be in em
+*/
+
+@mixin respond($breakpoint) {
+   @if $breakpoint  == phone
+   {
+    @media(max-width: 37.5em){@content};
+   }
+
+   @if $breakpoint  == tablet
+   {
+    @media(max-width: 56.25em){@content};
+   }
+
+   @if $breakpoint  == desktop
+   {
+    @media(max-width: 75em){@content};
+   }
+
+   @if $breakpoint  == bigdesktop
+   {
+    @media(min-width: 112.5em){@content};
+   }
+
+}

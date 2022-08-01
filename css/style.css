@@ -1,3 +1,11 @@
+/*
+0 -600px: phone
+600 - 900: tablet portrait 
+900 -1200 : desktop landscape
+
+1800 +: big screens
+// media query lengths must be in em
+*/
 /* ---------------------
         animations 
    ---------------------*/
@@ -47,6 +55,21 @@
 
 html {
   font-size: 62.5%;
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
 }
 
 .primary-heading {
@@ -152,6 +175,10 @@ body {
 
 .margin-top {
   margin-left: 7rem;
+}
+
+.font-size {
+  font-size: 1.4rem;
 }
 
 /* ---------------------
@@ -563,6 +590,80 @@ body {
   position: relative;
   margin-left: 0.2rem;
 }
+.popup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.9s;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup__close {
+  color: #c0392b;
+  position: absolute;
+  right: 2.5rem;
+  top: 0rem;
+  font-size: 5rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.popup__close:hover {
+  color: rgba(59, 167, 59, 0.884);
+}
+.popup__content {
+  width: 80%;
+  background-color: #fff;
+  box-shadow: 0rem 3rem 5rem rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  display: table;
+  overflow: hidden;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: all 0.9s;
+}
+.popup:target .popup__content {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.popup__left {
+  width: 33.333333%;
+  display: table-cell;
+}
+.popup__right {
+  width: 65.6666666%;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 3rem 5rem;
+}
+.popup__img {
+  display: block;
+  width: 100%;
+  margin-bottom: 0px;
+  image-rendering: pixelated;
+}
+.popup__video {
+  display: block;
+  width: 100%;
+  margin-top: 0px;
+}
+.popup__text {
+  column-count: 2;
+  column-gap: 3rem;
+  column-rule: 1px solid rgb(49, 42, 42);
+}
+
 /* ---------------------
         Header section
    ---------------------*/

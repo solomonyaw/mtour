@@ -1,3 +1,7 @@
+<!-- I Solomon Yaw Adeklo built this prototype website for the Ghana Tourism Development(GTDC) company during my national service.
+ I built it with html5 & Sass. I also integrated a virtual tourism application into the website in order 
+ to present a proposal to the management of the Ghana Tourism development company to create a virtual tour 
+ for all tourist sites that they manage. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -138,7 +142,7 @@
          </div>
         </section>
           
-     <section class="section-tours">
+     <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-big">
              <h1 class="secondary-heading">Popular tours & Virtual Tour </h1>
             </div> 
@@ -171,7 +175,7 @@
                                 <div class="card__price-only">Only</div>
                                 <div class="card__price-value">&#8373 500</div>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Now</a><br><br>
+                                <a href="#popup1" class="btn btn--white">Book Now</a><br><br>
                                 <a href="#" class="btn btn--white">Virtual tour</a>
                             </div>
                         </div>
@@ -205,7 +209,7 @@
                                  <div class="card__price-only">Only</div>
                                  <div class="card__price-value">&#8373 600</div>
                                  </div>
-                                 <a href="#" class="btn btn--white">Book Now</a><br><br>
+                                 <a href="#popup2" class="btn btn--white">Book Now</a><br><br>
                                  <a href="#" class="btn btn--white">Virtual tour</a>
                              </div>
                          </div>
@@ -239,7 +243,7 @@
                                  <div class="card__price-only">Only</div>
                                  <div class="card__price-value">&#8373 200</div>
                                  </div>
-                                 <a href="#" class="btn btn--white">Book Now</a><br><br>
+                                 <a href="#popup3" class="btn btn--white">Book Now</a><br><br>
                                  <a href="#" class="btn btn--white">Virtual tour</a>
                              </div>
                          </div>
@@ -248,7 +252,7 @@
                  </div>
      </section>
      <div class="u-center-text u-margin-bottom-big margin-top">
-        <a href="#" class="btn btn--green">Dicover more tours</a>
+        <a href="#" class="btn btn--green">Discover more tours</a>
         </div>
 
         <section class="section-stories">
@@ -358,12 +362,92 @@
             </div>
             <div class="col-1-of-2">
              <p class="footer__copyright-text">
-                Copyright &copy; 2022. Built by <a target="_blank" href="https://solomon.handbillapp.com/" class="footer__link"> Solomon yaw.</a>
+                Copyright &copy; 2022. Built by <a target="_blank" href="https://solomon.handbillapp.com/" class="footer__link"> Solomon yaw Adeklo.</a>
                 This website is a online virtual tour prototype website built for the <a href="http://gtdcgh.com/" target="_blank" class="footer__link">Ghana Tourism Development Company Limited</a>
              </p>
             </div>
         </div>
     </footer>
+     <!-- -------------------POPUP -------------------------->
+       <div class="popup" id="popup1">
+        <div class="popup__content">
+            <div class="popup__left">
+             <img src="img/bigtree.jpg" alt="big tree" class="popup__img">
+             <img src="" alt="" class="popup_image2">
+             <video class="popup__video" autoplay muted>
+                <source src="img/bigtree.mp4" type="video/mp4">
+                Your browser is not supported
+            </video>
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+            <h2 class="secondary-heading u-center-text"> BIG TREE</h2>
+            <h3 class="tertiary-heading">Information about this tour</h3>
+            <p class="popup_text font-size">
+                This tree is a must-see! believed to be about 400 to 500 years old, although oral history dates it older, 
+                it measures about 70 meters high and is very wide.Located at Aprokum aboutase 18km from Oda, this ‘giant’ of a tree is 
+                touted to be the largest in West Africa and as usual, it comes with the usual myths of healing the sick, helping infertile women
+                 to conceive, and delivering prosperty.Be sure to make prior by clicking here or by making direct arrangements from Oda town before 
+                 getting there. The place is sometimes weedy and inaccessible.How to get thereJoin a trotro from Oda to Swedru and hire a taxi to the town,
+                  Aprokumase. Alternatively, From Winneba, take minibus to Swedru and another to Aprokumase.
+            </p><br><br>
+            <a href="https://api.whatsapp.com/send?phone=233501517000&app" class=" btn btn--green">Book Now</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" class="btn btn--green">View Virtual Tour</a>
+            </div>
+        </div>
+       </div>
+
+        <!-- -------------------POPUP -------------------------->
+        <div class="popup" id="popup2">
+            <div class="popup__content">
+                <div class="popup__left">
+                 <img src="img/assin.jpg" alt="big tree" class="popup__img">
+                 <img src="" alt="" class="popup_image2">
+                 <video class="popup__video" autoplay muted>
+                    <source src="img/assinmanso.mp4" type="video/mp4">
+                    Your browser is not supported
+                </video>
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="secondary-heading u-center-text"> ASSIN MANSO RIVER PARK</h2>
+                <h3 class="tertiary-heading">Information about this tour</h3>
+                <p class="popup_text font-size">
+                    This is a rare tour offering you very detailed education and experience on the infamous Trans-Atlantic Slave trade tracing it from three key slave sites at Breku, Cape Coast, Elmina, Assin Manso and a visit to Manhyia Palace Museum. We also offer you an unlimited purified bottled
+                     water, Star Tours Ghana T-Shirt and free WiFi. All entrance fees are included in this tour. You only need to sit back and enjoy the trip with our experienced guide and driver. At Star Tours we offer you the quality product. When you book with us, Any profit that is made through 
+                     our trips goes directly to Future Stars Ghana, our charitable organization which supports over 150 orphans and destitute children
+                </p><br><br>
+                <a href="https://api.whatsapp.com/send?phone=233501517000&app" class=" btn btn--green">Book Now</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="btn btn--green">View Virtual Tour</a>
+                </div>
+            </div>
+           </div>
+     <!-- -------------------POPUP -------------------------->
+     <div class="popup" id="popup3">
+        <div class="popup__content">
+            <div class="popup__left">
+             <img src="img/temacenter.png" alt="big tree" class="popup__img">
+             <img src="" alt="" class="popup_image2">
+             <video class="popup__video" id ="myvideo" autoplay muted>
+                <source src="img/temagolf.mp4" type="video/mp4">
+                Your browser is not supported
+            </video>
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+            <h2 class="secondary-heading u-center-text">GCOW Golf Tournament</h2>
+            <h3 class="tertiary-heading">Information about this tour</h3>
+            <p class="popup_text font-size">
+                The Ghana – Centre of The World(GCOW) Golf Tournament is an annual sports tourism brand which creates awareness and engages stakeholders on the Ghana-Centre of the World Project. The tournament is in its third year and this year’s edition is dubbed the “Version 3.0”. It is an invitational
+                 tournament opened to all golfers across Ghana and the West Coast of Africa. The tournament brings together people from all walks of life such as Cabinet Ministers, Heads of State-Owned Enterprises, Captains of Industry, Africans in the diaspora, sports and golf enthusiasts, families,
+                  students, media personnel and the general public.
+            </p><br><br>
+            <a href="https://api.whatsapp.com/send?phone=233501517000&app" class=" btn btn--green">Book Now</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" class="btn btn--green">View Virtual Tour</a>
+            </div>
+        </div>
+       </div>
+
 
     <!-- <section class="test-grid">
      <div class="row">
