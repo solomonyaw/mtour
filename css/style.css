@@ -1186,7 +1186,6 @@ body {
   list-style: none;
   text-align: center;
   width: 100%;
-  visibility: hidden;
 }
 .navigation__link {
   display: inline-block;
