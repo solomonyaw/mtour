@@ -7,11 +7,11 @@
     margin-bottom: 2rem;
 
     @include respond(tablet){
-        margin-bottom: 65rem;
+        margin-bottom: 80rem;
        }
 
     @include respond(phone){
-        margin-bottom: 65rem;
+        margin-bottom: 72rem;
        }
     
     &__side

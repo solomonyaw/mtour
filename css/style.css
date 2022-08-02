@@ -446,12 +446,12 @@ body {
 }
 @media (max-width: 56.25em) {
   .card {
-    margin-bottom: 65rem;
+    margin-bottom: 80rem;
   }
 }
 @media (max-width: 37.5em) {
   .card {
-    margin-bottom: 65rem;
+    margin-bottom: 72rem;
   }
 }
 .card__side {
