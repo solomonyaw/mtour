@@ -85,6 +85,7 @@
        @include respond(phone){
   width: 100%;
        display: block;
+        height: 35vh;
        }
     }
 
@@ -97,6 +98,7 @@
 
         @include respond(phone){
             width: 100%;
+           
             display: block;
             vertical-align: middle;
         }
@@ -124,6 +126,7 @@
      @include respond(phone){
 
         width: 100%;
+        visibility: hidden;
      }
     }
 

@@ -837,6 +837,7 @@ body {
   .popup__left {
     width: 100%;
     display: block;
+    height: 35vh;
   }
 }
 .popup__right {
@@ -871,6 +872,7 @@ body {
 @media (max-width: 37.5em) {
   .popup__video {
     width: 100%;
+    visibility: hidden;
   }
 }
 /* ---------------------
