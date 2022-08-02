@@ -25,5 +25,14 @@
         font-size: 75%;
        }
   }
+
+body{
+  box-sizing: border-box;
+  padding: 1.5rem;
+
+  @include respond(tablet){
+    padding: 0;
+   }
+}
  
   

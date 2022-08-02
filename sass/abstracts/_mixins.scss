@@ -25,6 +25,7 @@
 
 1800 +: big screens
 // media query lengths must be in em
+  ORDER : Base > typography > general layout + grid >page layout> components
 */
 
 @mixin respond($breakpoint) {

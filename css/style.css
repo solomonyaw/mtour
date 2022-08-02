@@ -5,6 +5,7 @@
 
 1800 +: big screens
 // media query lengths must be in em
+  ORDER : Base > typography > general layout + grid >page layout> components
 */
 /* ---------------------
         animations 
@@ -72,6 +73,16 @@ html {
   }
 }
 
+body {
+  box-sizing: border-box;
+  padding: 1.5rem;
+}
+@media (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
+}
+
 .primary-heading {
   color: #fff;
   text-transform: uppercase;
@@ -85,6 +96,12 @@ html {
   animation-duration: 3s;
   animation-iteration-count: 3;
 }
+@media (max-width: 37.5em) {
+  .primary-heading--main {
+    font-size: 3rem;
+    letter-spacing: 0.7rem;
+  }
+}
 .primary-heading--sub {
   text-align: center;
   display: block;
@@ -96,6 +113,12 @@ html {
   animation-name: moveInLeft;
   animation-duration: 3s;
   margin-bottom: 3rem;
+}
+@media (max-width: 37.5em) {
+  .primary-heading--sub {
+    font-size: 1 rem;
+    letter-spacing: 0.3rem;
+  }
 }
 
 .secondary-heading {
@@ -109,9 +132,33 @@ html {
   letter-spacing: 3px;
   transition: all 0.3s;
 }
+@media (max-width: 56.25em) {
+  .secondary-heading {
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    padding: 0rem 3rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .secondary-heading {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    padding: 0rem 2rem;
+  }
+}
 .secondary-heading:hover {
   transform: skewY(3deg) skewX(5deg) scale(1.2);
   text-shadow: 2.5rem 1rem 2rem rgba(0, 0, 0, 0.8);
+}
+@media (max-width: 56.25em) {
+  .secondary-heading:hover {
+    transform: skewY(3deg) skewX(5deg) scale(1);
+  }
+}
+@media (max-width: 37.5em) {
+  .secondary-heading:hover {
+    transform: skewY(3deg) skewX(5deg) scale(1);
+  }
 }
 .secondary-headingservices--heading {
   color: #fff;
@@ -136,7 +183,6 @@ body {
   /* font-size: 16px; */
   line-height: 1.7;
   color: rgb(49, 42, 42);
-  padding: 1.5rem;
   box-sizing: border-box;
 }
 
@@ -801,6 +847,11 @@ body {
 .row:not(:last-child) {
   margin-bottom: 4rem;
 }
+@media (max-width: 56.25em) {
+  .row:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
 .row::after {
   content: "";
   display: table;
@@ -812,6 +863,16 @@ body {
 }
 .row [class^=col-]:not(:last-child) {
   margin-right: 6rem;
+}
+@media (max-width: 56.25em) {
+  .row [class^=col-]:not(:last-child) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 56.25em) {
+  .row [class^=col-] {
+    width: 100% !important;
+  }
 }
 .row .col-1-of-2 {
   width: calc((100% - 6rem) / 2);
