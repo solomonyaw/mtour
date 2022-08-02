@@ -67,8 +67,8 @@
       left:0;
       z-index:1500;
       opacity: 0;
-      opacity: .8s;
       transition: all .8s;
+      visibility: hidden
     }
 
     &__list

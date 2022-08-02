@@ -392,12 +392,12 @@ body {
 }
 @media (max-width: 56.25em) {
   .card {
-    margin-bottom: 50rem;
+    margin-bottom: 55rem;
   }
 }
 @media (max-width: 37.5em) {
   .card {
-    margin-bottom: 50rem;
+    margin-bottom: 55rem;
   }
 }
 .card__side {
@@ -418,14 +418,14 @@ body {
   .card__side {
     width: 95%;
     margin-left: 2rem;
-    height: 54rem;
+    height: 58rem;
   }
 }
 @media (max-width: 37.5em) {
   .card__side {
     width: 95%;
     margin-left: 2rem;
-    height: 54rem;
+    height: 58rem;
   }
 }
 .card__side--front {
@@ -997,8 +997,8 @@ body {
   left: 0;
   z-index: 1500;
   opacity: 0;
-  opacity: 0.8s;
   transition: all 0.8s;
+  visibility: hidden;
 }
 .navigation__list {
   position: absolute;
