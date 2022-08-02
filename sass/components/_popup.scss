@@ -38,6 +38,9 @@
         font-size: 5rem;
         text-decoration: none;
         display: inline-block;
+        background-color: $color-light-grey;
+        border-radius: 300rem;
+
 
         &:hover{
             color:$color-light-green;

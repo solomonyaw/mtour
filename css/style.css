@@ -794,6 +794,8 @@ body {
   font-size: 5rem;
   text-decoration: none;
   display: inline-block;
+  background-color: rgb(228, 220, 220);
+  border-radius: 300rem;
 }
 .popup__close:hover {
   color: rgba(59, 167, 59, 0.884);
