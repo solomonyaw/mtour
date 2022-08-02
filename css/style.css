@@ -418,14 +418,14 @@ body {
   .card__side {
     width: 95%;
     margin-left: 2rem;
-    height: 58rem;
+    height: 66rem;
   }
 }
 @media (max-width: 37.5em) {
   .card__side {
     width: 95%;
     margin-left: 2rem;
-    height: 58rem;
+    height: 66rem;
   }
 }
 .card__side--front {
