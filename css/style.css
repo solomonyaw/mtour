@@ -417,14 +417,14 @@ body {
 @media (max-width: 56.25em) {
   .card__side {
     width: 95%;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
     height: 66rem;
   }
 }
 @media (max-width: 37.5em) {
   .card__side {
     width: 95%;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
     height: 66rem;
   }
 }
@@ -857,8 +857,9 @@ body {
 }
 @media (max-width: 56.25em) {
   .footer__navigation {
-    width: 100%;
+    width: 90%;
     text-align: center;
+    font-size: 1rem !important;
   }
 }
 .footer__list {
