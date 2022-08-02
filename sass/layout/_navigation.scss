@@ -21,6 +21,17 @@
       box-shadow: 0 2em 4em rgba($color-black, 1.5 );
       text-align: center;
       cursor: pointer;
+
+      @include respond(tablet){
+        top: 4rem;
+      right:4rem;
+       }
+
+       @include respond(phone){
+        top: 3rem;
+        right:3rem;
+       }
+
    }
 
    &__background
@@ -32,9 +43,18 @@
       top: 6.5rem;
       right:6.5rem;
        z-index:1000;
-       background-image: radial-gradient($color-light-green,$color-dark-green);
+   
        transition: transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-      // transform: scale(50);
+
+       @include respond(tablet){
+        top: 3.5rem;
+        right:3.5rem;
+       }
+
+       @include respond(phone){
+        top: 3rem;
+        right:3rem;
+       }
     }
    
     &__nav
