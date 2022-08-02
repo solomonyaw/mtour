@@ -11,6 +11,19 @@
     visibility: hidden;
     transition: all .9s;
 
+    @include respond(tablet){
+        width:100%;
+        height: 1vh;
+        margin-top: 19rem;
+    }
+
+    @include respond(phone){
+        width:100%;
+        height: 50vh;
+        margin-top: 30rem;
+    }
+
+
     &:target{
         opacity: 1;
         visibility:visible; 
@@ -45,6 +58,17 @@
        transform: translate(-50%,-50%) scale(.5);
        transition: all .9s;
 
+       @include respond(tablet){
+        width:95%;
+        font-size: 3px;
+    }
+
+       @include respond(phone){
+        width:95%;
+        font-size: 3px;
+    }
+
+
     }
 
     &:target &__content
@@ -57,6 +81,11 @@
     {
        width: 33.333333%;
        display: table-cell;
+
+       @include respond(phone){
+  width: 100%;
+       display: block;
+       }
     }
 
     &__right
@@ -65,6 +94,12 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+
+        @include respond(phone){
+            width: 100%;
+            display: block;
+            vertical-align: middle;
+        }
     }
 
     &__img
@@ -73,6 +108,11 @@
      width: 100%;
      margin-bottom: 0px;
      image-rendering:pixelated;
+
+     @include respond(phone){
+
+        width: 100%;
+     }
     }
 
     &__video
@@ -80,12 +120,15 @@
      display: block;
      width: 100%;
      margin-top: 0px;
+
+     @include respond(phone){
+
+        width: 100%;
+     }
     }
 
     &__text
     {   
-      column-count: 2;
-      column-gap: 3rem;
-      column-rule: 1px solid $color-grey-dark;
+      
     }
 }

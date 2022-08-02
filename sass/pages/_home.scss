@@ -83,11 +83,14 @@
       width:100%;
       padding: 6rem;
 
-      @include respond (tablet)
+     
+      &__input
       {
-        width:100%;
+        @include respond(phone)
+      {
+        width: 10rem;
+      } 
       }
-
-
+       
   }
 }
