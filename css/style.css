@@ -720,7 +720,7 @@ body {
   height: 95vh;
   background-attachment: fixed;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95vh);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
   border-radius: 2rem;
   border: 1px solid rgba(0, 0, 0, 0.137);
   position: relative;
