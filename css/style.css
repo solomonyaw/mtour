@@ -837,7 +837,7 @@ body {
   .popup__left {
     width: 100%;
     display: block;
-    height: 35vh;
+    height: 20vh;
   }
 }
 .popup__right {
@@ -849,6 +849,7 @@ body {
 @media (max-width: 37.5em) {
   .popup__right {
     width: 100%;
+    padding: 1rem;
     display: block;
     vertical-align: middle;
   }
