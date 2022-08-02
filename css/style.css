@@ -389,16 +389,15 @@ body {
   height: 5rem;
   position: relative;
   margin-bottom: 2rem;
-  cursor: pointer;
 }
 @media (max-width: 56.25em) {
   .card {
-    margin-bottom: 400px;
+    margin-bottom: 50rem;
   }
 }
 @media (max-width: 37.5em) {
   .card {
-    margin-bottom: 400px;
+    margin-bottom: 50rem;
   }
 }
 .card__side {
@@ -417,9 +416,16 @@ body {
 }
 @media (max-width: 56.25em) {
   .card__side {
-    height: 57rem;
-    width: 90%;
-    margin-left: 1.5em;
+    width: 95%;
+    margin-left: 2rem;
+    height: 54rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .card__side {
+    width: 95%;
+    margin-left: 2rem;
+    height: 54rem;
   }
 }
 .card__side--front {
@@ -649,7 +655,6 @@ body {
 }
 .form__radio-label {
   font-size: 1.6rem;
-  cursor: pointer;
   position: relative;
   margin-left: 0.2rem;
 }

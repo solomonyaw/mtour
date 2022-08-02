@@ -5,14 +5,13 @@
     height: 5rem; 
     position: relative;
     margin-bottom: 2rem;
-    cursor: pointer;
 
     @include respond(tablet){
-        margin-bottom: 400px;
+        margin-bottom: 50rem;
        }
 
     @include respond(phone){
-        margin-bottom: 400px;
+        margin-bottom: 50rem;
        }
     
     &__side
@@ -29,12 +28,20 @@
         border-radius: 5px;
         overflow: hidden;
         box-shadow: 0rem 4rem 5rem rgba($color-grey-dark,1.0);
-
+ 
         @include respond(tablet){
-            height: 57rem;
-            width: 90%;
-            margin-left:1.5em;
+            width: 95%;
+            margin-left:2rem;
+            height: 54rem;
            }
+    
+        @include respond(phone){
+            width: 95%;
+            margin-left:2rem;
+            height: 54rem;
+           }
+          
+      
         
         &--front
         {
