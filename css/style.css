@@ -223,6 +223,10 @@ body {
   margin-left: 7rem;
 }
 
+.margin-top-medium {
+  margin-bottom: 4rem;
+}
+
 .font-size {
   font-size: 1.4rem;
 }
@@ -468,14 +472,14 @@ body {
   .card__side {
     width: 95%;
     margin-left: 1.5rem;
-    height: 66rem;
+    height: 70rem;
   }
 }
 @media (max-width: 37.5em) {
   .card__side {
     width: 95%;
     margin-left: 1.5rem;
-    height: 66rem;
+    height: 70rem;
   }
 }
 .card__side--front {
