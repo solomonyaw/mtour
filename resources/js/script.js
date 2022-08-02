@@ -1,58 +1,68 @@
 
 // // scroll on buttons
-// $(document).ready(function(){
-//     $('.js--discover').click(function(e){
-//      var linkHref = $(this).attr('href');
-//      $('html,body').animate({
-//        scrollTop: $('.section-tours').offset().top},1000);
+  $(document).ready(function(){
+    $('.js--discover').click(function(e){      var linkHref = $(this).attr('href');
+     $('html,body').animate({
+        scrollTop: $('.section-tours').offset().top},1000);
     
-//         e.preventDefault();
+         e.preventDefault();
 
-//     });
+     });
 
-//     $('.item2').click(function(e){
-//         var linkHref = $(this).attr('href');
-//         $('html,body').animate({
-//           scrollTop: $('.features_section').offset().top},1000);
-//            e.preventDefault();
+     $('.item2').click(function(e){
+         var linkHref = $(this).attr('href');
+         $('html,body').animate({
+           scrollTop: $('.features_section').offset().top},1000);
+            e.preventDefault();
    
-//        });
+        });
        
-//       //navigation scroll 
-//     $('.item1').click(function(e){
-//         var linkHref = $(this).attr('href');
-//         $('html,body').animate({
-//           scrollTop: $('.section-about').offset().top},1000);
+       //navigation scroll 
+     $('.item1').click(function(e){
+         var linkHref = $(this).attr('href');
+         $('html,body').animate({
+           scrollTop: $('.section-about').offset().top},1000);
        
-//            e.preventDefault();
+            e.preventDefault();
    
-//        });
+        });
 
-//        $('.item3').click(function(e){
-//         var linkHref = $(this).attr('href');
-//         $('html,body').animate({
-//           scrollTop: $('.section-tours').offset().top},1000);
+        $('.item3').click(function(e){
+         var linkHref = $(this).attr('href');
+         $('html,body').animate({
+           scrollTop: $('.section-tours').offset().top},1000);
        
-//            e.preventDefault();
+            e.preventDefault();
    
-//        });
+        });
 
-//        $('.item4').click(function(e){
-//         var linkHref = $(this).attr('href');
-//         $('html,body').animate({
-//           scrollTop: $('.section-stories').offset().top},1000);
+        $('.item4').click(function(e){
+         var linkHref = $(this).attr('href');
+         $('html,body').animate({
+           scrollTop: $('.section-stories').offset().top},1000);
        
-//            e.preventDefault();
+            e.preventDefault();
    
-//        });
-//        $('.item5').click(function(e){
-//         var linkHref = $(this).attr('href');
-//         $('html,body').animate({
-//           scrollTop: $('.section-book').offset().top},1000);
+        });
+        $('.item5').click(function(e){
+         var linkHref = $(this).attr('href');
+         $('html,body').animate({
+           scrollTop: $('.section-book').offset().top},1000);
        
-//            e.preventDefault();
+            e.preventDefault();
    
-//        });
+        });
+
+        $('.btn-text').click(function(e){
+          var linkHref = $(this).attr('href');
+          $('html,body').animate({
+            scrollTop: $('.section-tours').offset().top},1000);
+        
+             e.preventDefault();
+    
+         });
+
+        btn-text
 
 //        //mobile nav drop-down
 //       //  $('.navigation__icon').click(function(){
@@ -73,7 +83,7 @@
 //       //  })
 
       
-// });
+ });
 
 // // var vid = document.getElementById("myvideo");
 

@@ -8,6 +8,12 @@
     box-shadow: 0 2em 4em rgba($color-black, 1.5 );
     transition: all 0.3s;
 
+    @include respond(tablet){
+        width:80%;
+        margin: 0 auto;
+        
+      }
+
     &__icon
     {
       font-size:6rem;
@@ -19,6 +25,11 @@
     }
     &__text{
 
+        @include respond(tablet){
+            width: 75%;
+            margin: 0 auto;
+          }
+
     }
     &__image
     {
@@ -26,6 +37,11 @@
         height: 80px;
         margin-top: 1rem;
         display: inline-block;
+
+        @include respond(tablet){
+            height: 100px;
+            width:80%;
+          }
     }
     &:hover{
         transform: scale(1.05) translateY(-1.5rem);
