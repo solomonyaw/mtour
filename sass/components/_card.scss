@@ -32,6 +32,8 @@
 
         @include respond(tablet){
             height: 57rem;
+            width: 90%;
+            margin-left:1.5em;
            }
         
         &--front
