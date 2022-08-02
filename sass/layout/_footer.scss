@@ -5,10 +5,19 @@
  font-size: 1.4rem; 
  color: $color-light-grey;
 
+ @include respond(tablet){
+  padding: 0;  
+ }
+
+
  &__logo-box
  {
     text-align: center; 
     margin-bottom: 5rem;
+
+    @include respond(tablet){
+      margin-bottom: 0rem;
+     }
  }
 
  &__logo
@@ -24,6 +33,12 @@
    width:86%;
     float: left;
     margin-left: 2rem;
+
+    @include respond(tablet){
+      width: 100%;
+      text-align: center;
+     }
+  
  }
 
  &__list
@@ -64,5 +79,10 @@ text-align: left;
     width:88%;
     float: right;
     margin-right: 2rem;
+
+    @include respond(tablet){
+      padding: 0;
+      float: right;
+     }
   }
 }

@@ -22,15 +22,15 @@
       text-align: center;
       cursor: pointer;
 
-      @include respond(tablet){
-        top: 4rem;
-      right:4rem;
-       }
+    //   @include respond(tablet){
+    //     top: 4rem;
+    //   right:4rem;
+    //    }
 
-       @include respond(phone){
-        top: 3rem;
-        right:3rem;
-       }
+    //    @include respond(phone){
+    //     top: 3rem;
+    //     right:3rem;
+    //    }
 
    }
 
@@ -46,15 +46,15 @@
    
        transition: transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
 
-       @include respond(tablet){
-        top: 3.5rem;
-        right:3.5rem;
-       }
+    //    @include respond(tablet){
+    //     top: 3.5rem;
+    //     right:3.5rem;
+    //    }
 
-       @include respond(phone){
-        top: 3rem;
-        right:3rem;
-       }
+    //    @include respond(phone){
+    //     top: 3rem;
+    //     right:3rem;
+    //    }
     }
    
     &__nav
