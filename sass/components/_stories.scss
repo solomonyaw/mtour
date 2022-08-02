@@ -8,8 +8,28 @@
     padding: 6rem;
     transform: skewX(-12deg);
 
+    @include respond(tablet){
+        width:100%;
+        padding: 4rem;
+        transform: skewX(0deg);
+       }
+
+       @include respond(phone){
+        width:100%;
+        padding: 4rem;
+        transform: skewX(0deg);
+       }
+
     & > *{
         transform: skewX(12deg); 
+
+        @include respond(tablet){
+            transform: skewX(0deg);
+           }
+
+           @include respond(phone){
+            transform: skewX(0deg);
+           }
     }
 
     &__shape
@@ -22,6 +42,14 @@
       -webkit-clip-path: circle(50% at 50% 50%);
       transform: translateX(-3rem) skewX(12deg);
       position: relative;
+
+      @include respond(tablet){
+        transform: translateX(-3rem) skewX(0deg);
+      }
+
+       @include respond(phone){
+        transform: translateX(-3rem) skewX(0deg);
+       }
     }
 
     &__image{
@@ -32,6 +60,14 @@
     &__text
     {
         transform: skewX(12deg);
+     
+        @include respond(tablet){
+            transform: skewX(0deg);
+        }
+
+        @include respond(phone){
+            transform: skewX(0deg);
+        }
     }
 
     &__caption
