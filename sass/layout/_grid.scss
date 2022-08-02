@@ -13,6 +13,13 @@
      }
     }
 
+    @include respond(tablet){
+      max-width: 50rem;
+     }
+     @include respond(phone){
+      max-width: 50rem;
+     }
+
     @include clearfix;
 
     [class^="col-"]
@@ -26,6 +33,7 @@
 
            @include respond(tablet){
             margin-right: 0;
+            margin-bottom: $vertical-gutter;
            }
         }
 
