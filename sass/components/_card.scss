@@ -4,7 +4,8 @@
     -moz-perspective: 150rem;
     height: 5rem; 
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 10rem;
+    
 
     @include respond(tablet){
         margin-bottom: 80rem;
@@ -17,7 +18,7 @@
     &__side
     {
         background-color: $color-white;
-        height: 55rem;
+        height: 62rem;
         font-size: 2rem;
         transition: all 0.8s ease;
         position: absolute;

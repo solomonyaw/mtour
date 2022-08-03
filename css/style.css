@@ -442,7 +442,7 @@ body {
   -moz-perspective: 150rem;
   height: 5rem;
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 10rem;
 }
 @media (max-width: 56.25em) {
   .card {
@@ -456,7 +456,7 @@ body {
 }
 .card__side {
   background-color: #fff;
-  height: 55rem;
+  height: 62rem;
   font-size: 2rem;
   transition: all 0.8s ease;
   position: absolute;
